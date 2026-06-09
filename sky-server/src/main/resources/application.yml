@@ -8,10 +8,14 @@ spring:
     allow-circular-references: true
   datasource:
     druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: root
-      password: 123456
+      driver-class-name: ${sky.datasource.druid.driver-class-name}
+      url: ${sky.datasource.druid.url}
+      username: ${sky.datasource.druid.username}
+      password: ${sky.datasource.druid.password}
+  redis:
+    host: ${sky.redis.host}
+    port: ${sky.redis.port}
+    database: ${sky.redis.database}
 
 mybatis:
   #mapper配置文件
@@ -37,6 +41,11 @@ sky:
     admin-ttl: 720000000
     # 设置前端传递过来的令牌名称
     admin-token-name: token
+
+    # 用户端jwt配置
+    user-secret-key: itheima
+    user-ttl: 720000000
+    user-token-name: authentication
   alioss: # 1. 填写你的 Bucket 所在地域（北京）
       endpoint: ${sky.alioss.endpoint}
       # 2. 粘贴刚才获取的 AccessKey ID

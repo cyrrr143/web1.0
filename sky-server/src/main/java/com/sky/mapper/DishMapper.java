@@ -59,4 +59,13 @@ public interface DishMapper {
      */
     @AutoFill(value = OperationType.UPDATE)
     void update(Dish dish);
+
+    /**
+     * 条件查询菜品
+     * @param dishPageQueryDTO
+     * @return
+     */
+    List<DishVO> listWithFlavor(DishPageQueryDTO dishPageQueryDTO);
+
+    List<Dish> list(Dish dish);
 }
