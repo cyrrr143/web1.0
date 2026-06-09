@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sky.mapper.ShoppingCartMapper">
+
+    <!-- 根据条件查询购物车 -->
+    <select id="get" resultType="com.sky.entity.ShoppingCart">
+        SELECT * FROM shopping_cart
+        <where>
+            <if test="userId != null">
+                AND user_id = #{userId}
+            </if>
+            <if test="dishId != null">
+                AND dish_id = #{dishId}
+            </if>
+            <if test="setmealId != null">
+                AND setmeal_id = #{setmealId}
+            </if>
+            <if test="dishFlavor != null and dishFlavor != ''">
+                AND dish_flavor = #{dishFlavor}
+            </if>
+        </where>
+    </select>
+
+    <!-- 更新购物车数量 -->
+    <update id="updateNumberById">
+        UPDATE shopping_cart SET number = #{number} WHERE id = #{id}
+    </update>
+
+    <!-- ⚠️ 删除整个 insert 标签（已有 @Insert 注解） -->
+    <!-- <insert id="insert">
+        INSERT INTO shopping_cart
+        (name, user_id, dish_id, setmeal_id, dish_flavor, number, amount, image, create_time)
+        VALUES
+        (#{name}, #{userId}, #{dishId}, #{setmealId}, #{dishFlavor}, #{number}, #{amount}, #{image}, #{createTime})
+    </insert> -->
+
+    <!-- 删除购物车 -->
+    <delete id="deleteById">
+        DELETE FROM shopping_cart WHERE id = #{id}
+    </delete>
+
+</mapper>
