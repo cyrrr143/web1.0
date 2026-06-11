@@ -4,3 +4,5 @@
 *.class
 *Test.java
 **/test/
+# 敏感配置文件（包含密钥等敏感信息）
+sky-server/src/main/resources/application-dev.yml
