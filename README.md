@@ -413,7 +413,7 @@ public class GlobalExceptionHandler {
 
 如有问题或建议，欢迎通过以下方式联系：
 
-- 📮 Email: your-email@example.com
+- 📮 Email: 1953876211@qq.com
 - 💬 Issues: [GitHub Issues](https://github.com/cyrrr143/diy-1.0/issues)
 
 ---
