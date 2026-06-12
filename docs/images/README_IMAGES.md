@@ -10,17 +10,17 @@
 
 | 文件名 | 说明 | 对应页面 |
 |--------|------|---------|
-| `client-home.jpg` | 餐厅主页 | 第一张图 - 点餐首页 |
-| `client-menu.jpg` | 菜品列表 | 第二张图 - 选择菜品 |
-| `client-order.jpg` | 提交订单 | 第三张图 - 订单确认页 |
-| `client-orders.jpg` | 订单历史 | 第四张图 - 查看订单记录 |
+| `client-home.jpg` (img.png) | 餐厅主页 | 第一张图 - 点餐首页 |
+| `client-menu.jpg` (缺失) | 菜品列表 | 第二张图 - 选择菜品 |
+| `client-order.jpg` (img_1.png) | 提交订单 | 第三张图 - 订单确认页 |
+| `client-orders.jpg` (img_2.png) | 订单历史 | 第四张图 - 查看订单记录 |
 
 ### 管理端（商家后台）截图
 
 | 文件名 | 说明 | 对应页面 |
 |--------|------|---------|
-| `admin-orders.jpg` | 订单管理 | 第五张图 - 订单列表和详情弹窗 |
-| `admin-dishes.jpg` | 菜品管理 | 第六张图 - 菜品列表页面 |
+| `admin-orders.jpg` (img_3.png) | 订单管理 | 第五张图 - 订单列表和详情弹窗 |
+| `admin-dishes.jpg` (img_4.png) | 菜品管理 | 第六张图 - 菜品列表页面 |
 
 ##  上传步骤
 
