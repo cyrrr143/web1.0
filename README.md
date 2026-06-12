@@ -10,7 +10,7 @@
 
 **一个基于 Spring Boot 的外卖订餐系统后端实现，支持管理端和用户端双端架构**
 
-[功能特性](#-功能特性) • [技术栈](#-技术栈) • [快速开始](#-快速开始) • [项目结构](#-项目结构) • [API文档](#-api文档)
+[功能特性](#-功能特性) • [界面展示](#-界面展示) • [技术栈](#-技术栈) • [快速开始](#-快速开始) • [项目结构](#-项目结构) • [API文档](#-api文档)
 
 </div>
 
@@ -30,6 +30,72 @@ Sky Takeout（苍穹外卖）是一个完整的外卖订餐系统后端项目，
 - ✅ **微信支付**：支持微信支付的订单结算功能
 - ✅ **实时推送**：WebSocket 实现来单提醒和客户催单
 - ✅ **数据统计**：Excel 导出营业额、订单统计等报表
+
+---
+
+## 📱 界面展示
+
+### 用户端（小程序）
+
+#### 点餐流程
+
+<div align="center">
+<table>
+<tr>
+<td align="center"><b>餐厅主页</b></td>
+<td align="center"><b>菜品列表</b></td>
+<td align="center"><b>提交订单</b></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/images/client-home.jpg" width="250" alt="餐厅主页"/></td>
+<td align="center"><img src="docs/images/client-menu.jpg" width="250" alt="菜品列表"/></td>
+<td align="center"><img src="docs/images/client-order.jpg" width="250" alt="提交订单"/></td>
+</tr>
+</table>
+</div>
+
+**功能说明：**
+- **餐厅主页**：展示餐厅信息、距离、配送费、预计送达时间
+- **菜品列表**：分类浏览菜品，支持选择规格加入购物车
+- **提交订单**：确认收货地址、商品明细、打包费、配送费，选择支付方式
+
+#### 订单管理
+
+<div align="center">
+<img src="docs/images/client-orders.jpg" width="250" alt="订单历史"/>
+</div>
+
+**功能说明：**
+- 查看历史订单记录
+- 订单状态显示（待付款、已完成、已取消等）
+- 支持再来一单、去支付等操作
+
+---
+
+### 管理端（商家后台）
+
+#### 订单管理
+
+<div align="center">
+<img src="docs/images/admin-orders.jpg" width="800" alt="订单管理"/>
+</div>
+
+**功能说明：**
+- 查看所有订单列表（全部订单、待接单、待派送、派送中、已完成、已取消）
+- 订单详情弹窗：查看用户信息、菜品明细、费用明细、备注等
+- 订单操作：接单、拒单、取消、派送、完成
+
+#### 菜品管理
+
+<div align="center">
+<img src="docs/images/admin-dishes.jpg" width="800" alt="菜品管理"/>
+</div>
+
+**功能说明：**
+- 菜品列表展示：名称、图片、分类、售价、售卖状态、最后操作时间
+- 支持按菜品名称、分类、售卖状态筛选查询
+- 菜品操作：新建、修改、删除、启售、停售
+- 批量删除功能
 
 ---
 
